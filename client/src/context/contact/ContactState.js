@@ -1,6 +1,5 @@
 import React, { useReducer } from 'react';
 import axios from 'axios';
-//import { v4 as uuidv4 } from 'uuid';
 import ContactContext from './contactContext';
 import contactReducer from './contactReducer';
 import {
@@ -25,8 +24,6 @@ const ContactState = (props) => {
   };
 
   const [state, dispatch] = useReducer(contactReducer, initialState);
-
-  //const id = uuidv4();
 
   // Get Contacts
 
